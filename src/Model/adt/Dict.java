@@ -1,6 +1,7 @@
 package Model.adt;
 import Exceptions.DictError;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -34,5 +35,10 @@ public class Dict<T1,T2> implements IDict<T1,T2> {
     @Override
     public boolean isDefined(T1 id) {
         return dictionary.containsKey(id);
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(dictionary.entrySet().toArray());
     }
 }

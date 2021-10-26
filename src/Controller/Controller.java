@@ -22,7 +22,8 @@ public class Controller {
             throw new InterpreterError("PrgState stack is empty!");
         }
         IStmt crtStmt=stk.pop();
-        System.out.println(crtStmt);
+       // if (!stk.isEmpty())
+            System.out.println(state);
         return crtStmt.execute(state);
     }
 

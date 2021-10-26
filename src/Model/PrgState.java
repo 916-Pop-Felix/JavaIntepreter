@@ -31,4 +31,12 @@ public class PrgState {
 
     public IStack<IStmt> getExeStack(){return this.exeStack;}
 
+    @Override
+    public String toString() {
+        return String.format("%s------EXE_STACK------\n%s------SYM_TABLE------\n%s------OUT------\n",
+                exeStack.toString(),
+                symTable.toString(),
+                out.toString());
+    }
+
 }

@@ -31,4 +31,9 @@ public class MyStack<T> implements IStack<T> {
     public T top() throws StackError {
         return stack.peek();
     }
+
+    @Override
+    public String toString() {
+        return stack.toString();
+    }
 }
