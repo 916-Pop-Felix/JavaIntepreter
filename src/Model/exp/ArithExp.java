@@ -1,10 +1,12 @@
 package Model.exp;
+import Exceptions.DivisionByZeroError;
 import Exceptions.InterpreterError;
+import Exceptions.InvalidTypeError;
 import Model.adt.IDict;
 import Model.types.IntType;
 import Model.value.IValue;
 import Model.value.IntValue;
-public class ArithExp extends Exp{
+public class ArithExp implements Exp{
     OPERATOR op;
     Exp e1, e2;
 
@@ -18,7 +20,7 @@ public class ArithExp extends Exp{
         e2=_e2;
     }
 
-    public IValue eval(IDict<String,IValue> tbl) throws InterpreterError{
+    public IValue eval(IDict<String,IValue> tbl) throws InterpreterError, DivisionByZeroError, InvalidTypeError {
         IValue v1,v2;
         v1=e1.eval(tbl);
         if (v1.getType().equals(new IntType())) {
@@ -37,14 +39,14 @@ public class ArithExp extends Exp{
                     return new IntValue(n1 * n2);
                 if (op == OPERATOR.DIV)
                     if (n2 == 0)
-                        throw new InterpreterError("division by zero");
+                        throw new DivisionByZeroError("division by zero");
                     else
                         return new IntValue(n1 / n2);
             } else {
-                throw new InterpreterError("second operand is not an integer");
+                throw new InvalidTypeError("second operand is not an integer");
             }
         }
-        throw new InterpreterError("first operand is not an integer");
+        throw new InvalidTypeError("first operand is not an integer");
     }
 
     public OPERATOR getOp() {return this.op;}

@@ -1,6 +1,8 @@
 package Model.stmt;
 
+import Exceptions.DivisionByZeroError;
 import Exceptions.InterpreterError;
+import Exceptions.InvalidTypeError;
 import Model.PrgState;
 import Model.exp.Exp;
 import Model.types.BoolType;
@@ -23,7 +25,7 @@ public class IfStmt implements IStmt{
         return String.format("if (%s){\n%s\n}else{\n%s\n}",exp.toString(),thenS.toString(),elseS.toString());
     }
 
-    public PrgState execute(PrgState state) throws InterpreterError {
+    public PrgState execute(PrgState state) throws InterpreterError, InvalidTypeError, DivisionByZeroError {
         IValue value=exp.eval(state.getSymTable());
         if (value.getType().equals(new BoolType())) {
             BoolValue cond=(BoolValue)value;
@@ -35,6 +37,6 @@ public class IfStmt implements IStmt{
             }
             return state;
         }
-        throw new InterpreterError("Bool type absent in if statement");
+        throw new InvalidTypeError("Bool type absent in if statement");
     }
 }

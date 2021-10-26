@@ -1,6 +1,6 @@
 package Model.stmt;
 
-import Exceptions.InterpreterError;
+import Exceptions.*;
 import Model.PrgState;
 import Model.adt.IDict;
 import Model.adt.IStack;
@@ -25,7 +25,7 @@ public class AssignStmt implements IStmt{
     }
 
     @Override
-    public PrgState execute(PrgState state) throws InterpreterError {
+    public PrgState execute(PrgState state) throws InterpreterError, DictError, VarNotDefinedError, InvalidTypeError, DivisionByZeroError {
         IStack<IStmt> stk=state.getExeStack();
         IDict<String, IValue> symTbl= state.getSymTable();
 
@@ -35,10 +35,10 @@ public class AssignStmt implements IStmt{
             if (val.getType().equals(typId))
                 symTbl.update(id, val);
             else
-                throw new InterpreterError("declared type of variable" + id + " the assigned expression do not match");
+                throw new InvalidTypeError("declared type of variable" + id + " the assigned expression do not match");
         }
         else
-            throw new InterpreterError("the used variable" +id + " was not declared before");
+            throw new VarNotDefinedError("the used variable" +id + " was not declared before");
         return state;
     }
 

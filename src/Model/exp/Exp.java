@@ -1,10 +1,12 @@
 package Model.exp;
+import Exceptions.DivisionByZeroError;
 import Exceptions.InterpreterError;
+import Exceptions.InvalidTypeError;
 import Model.adt.IDict;
 import Model.value.IValue;
 
-public abstract class Exp {
+public interface Exp {
 
-    public abstract IValue eval(IDict<String, IValue> symTable) throws InterpreterError;
-    public abstract String toString();
+    IValue eval(IDict<String, IValue> symTable) throws InterpreterError, DivisionByZeroError, InvalidTypeError;
+    String toString();
 }

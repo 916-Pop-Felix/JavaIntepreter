@@ -1,4 +1,6 @@
 package Model.adt;
+import Exceptions.StackError;
+
 import java.util.Stack;
 
 public class MyStack<T> implements IStack<T> {
@@ -9,7 +11,9 @@ public class MyStack<T> implements IStack<T> {
     }
 
     @Override
-    public T pop() {
+    public T pop() throws StackError{
+        if (stack.isEmpty())
+            throw new StackError("Stack is empty!");
         return stack.pop();
     }
 
@@ -21,5 +25,10 @@ public class MyStack<T> implements IStack<T> {
     @Override
     public boolean isEmpty() {
         return stack.isEmpty();
+    }
+
+    @Override
+    public T top() throws StackError {
+        return stack.peek();
     }
 }

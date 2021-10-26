@@ -4,7 +4,7 @@ import Exceptions.InterpreterError;
 import Model.adt.IDict;
 import Model.value.IValue;
 
-public class ValueExp extends Exp{
+public class ValueExp implements Exp{
 
     IValue value;
     public ValueExp(IValue _val){

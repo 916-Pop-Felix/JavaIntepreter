@@ -1,5 +1,7 @@
 package Model.adt;
 
+import Exceptions.ListError;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -17,7 +19,11 @@ public class List<T> implements IList<T> {
     }
 
     @Override
-    public T pop() {return list.pop();}
+    public T pop()  throws ListError {
+        if (list.isEmpty())
+            throw new ListError("Empty list!");
+        return list.pop();
+    }
 
     public T getFirstElement() {return this.list.peek();}
 
@@ -29,6 +35,11 @@ public class List<T> implements IList<T> {
     @Override
     public void clear(){
         this.list.clear();
+    }
+
+    @Override
+    public T get(int pos) {
+        return this.list.get(pos);
     }
 
     @Override

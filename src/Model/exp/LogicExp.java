@@ -1,12 +1,14 @@
 package Model.exp;
 
+import Exceptions.DivisionByZeroError;
 import Exceptions.InterpreterError;
+import Exceptions.InvalidTypeError;
 import Model.adt.IDict;
 import Model.types.BoolType;
 import Model.value.BoolValue;
 import Model.value.IValue;
 
-public class LogicExp extends Exp{
+public class LogicExp implements Exp{
     Exp e1;
     Exp e2;
     OPERATOR op;
@@ -17,7 +19,7 @@ public class LogicExp extends Exp{
         op=_op;
     }
     @Override
-    public IValue eval(IDict<String, IValue> symTable) throws InterpreterError {
+    public IValue eval(IDict<String, IValue> symTable) throws InterpreterError, DivisionByZeroError, InvalidTypeError {
         IValue v1,v2;
         v1=e1.eval(symTable);
         if (v1.getType().equals(new BoolType())){
@@ -36,7 +38,7 @@ public class LogicExp extends Exp{
             }
 
         }
-        throw new InterpreterError(String.format("Invalid operation between %s and %s",e1.toString(),e2.toString()));
+        throw new InvalidTypeError(String.format("Invalid operation between %s and %s",e1.toString(),e2.toString()));
     }
 
     @Override

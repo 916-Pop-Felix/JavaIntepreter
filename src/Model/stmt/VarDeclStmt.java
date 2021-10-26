@@ -2,6 +2,7 @@ package Model.stmt;
 
 
 import Exceptions.InterpreterError;
+import Exceptions.VarAlreadyDefined;
 import Model.PrgState;
 import Model.adt.IDict;
 import Model.types.IType;
@@ -18,13 +19,13 @@ public class VarDeclStmt implements IStmt{
 
 
     @Override
-    public PrgState execute(PrgState state) throws InterpreterError {
+    public PrgState execute(PrgState state) throws InterpreterError, VarAlreadyDefined {
         IDict<String,IValue> symTable=state.getSymTable();
         if (!symTable.isDefined(name)){
             symTable.add(name,type.defaultValue());
             return null;
         }
-        throw new InterpreterError(String.format("Variable %s already declared",name));
+        throw new VarAlreadyDefined(String.format("Variable %s already declared",name));
 
     }
 
