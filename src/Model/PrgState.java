@@ -16,6 +16,7 @@ public class PrgState {
 
     public PrgState(IStack<IStmt> _exe,IDict<String, IValue> _sym,IList<String> _out,IStmt _org){
         exeStack=_exe;
+        exeStack.push(_org);
         symTable=_sym;
         out=_out;
         originalProgram=_org;

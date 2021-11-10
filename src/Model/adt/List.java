@@ -2,8 +2,6 @@ package Model.adt;
 
 import Exceptions.ListError;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 public class List<T> implements IList<T> {

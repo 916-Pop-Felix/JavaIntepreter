@@ -1,11 +1,17 @@
 package Model.exp;
 
 public enum OPERATOR{
-    ADD("+"),
+    ADD("+"), // arithmetic
     SUB("-"),
     MUL("*"),
     DIV("/"),
-    AND("&&"),
+    GREATER(">"),  //relational
+    GRTOREQUAL(">="),
+    EQUAL("=="),
+    NOTEQUAL("!="),
+    LESSER("<"),
+    LESSOREQUAL("<="),
+    AND("&&"), //logical
     OR("||");
     public final String label;
     private OPERATOR(String _sgn){
