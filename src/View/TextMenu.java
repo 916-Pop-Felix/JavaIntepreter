@@ -3,6 +3,7 @@ package View;
 import Exceptions.*;
 import View.commands.Command;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -13,11 +14,11 @@ public class TextMenu {
     public void addCommand(Command c){ commands.put(c.getKey(),c);}
     private void printMenu() {
         for(Command com : commands.values()) {
-            String line=String.format("%4s : %s", com.getKey(), com.getDescription());
+            String line=String.format("%4s :\n %s;", com.getKey(), com.getDescription());
             System.out.println(line);
         }
     }
-    public void show() throws InterpreterError, ListError, StackError, DictError, VarNotDefinedError, InvalidTypeError, DivisionByZeroError, VarAlreadyDefined{
+    public void show() throws InterpreterError, ListError, StackError, DictError, VarNotDefinedError, InvalidTypeError, DivisionByZeroError, VarAlreadyDefined, IOException, FileError {
         Scanner scanner=new Scanner(System.in);
         while(true){
             printMenu();

@@ -21,7 +21,7 @@ public class AssignStmt implements IStmt{
 
     @Override
     public String toString(){
-        return this.id + "=" + this.expression.toString()+";";
+        return this.id + "=" + this.expression.toString();
     }
 
     @Override

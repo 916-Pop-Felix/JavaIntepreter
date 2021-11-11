@@ -1,0 +1,260 @@
+11/11/2021 16:37:12
+[]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[varf=Model.value.StringValue@378fd1ac;
+openRFile(varf)
+int varc;
+readFile(varf,varc)
+print(varc);
+readFile(varf,varc)
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[]------EXE_STACK------
+[varf=Model.value.StringValue@5910e440]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[openRFile(varf)
+int varc;
+readFile(varf,varc)
+print(varc);
+readFile(varf,varc)
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf=Model.value.StringValue@5910e440]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[int varc;
+readFile(varf,varc)
+print(varc);
+readFile(varf,varc)
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[readFile(varf,varc)
+print(varc);
+readFile(varf,varc)
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac, varc=0]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[print(varc);
+readFile(varf,varc)
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac, varc=0]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac, varc=15]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[readFile(varf,varc)
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac, varc=15]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac, varc=15]------SYM_TABLE------
+[15]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac, varc=15]------SYM_TABLE------
+[15]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac, varc=50]------SYM_TABLE------
+[15]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[closeRFile(varf)]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac, varc=50]------SYM_TABLE------
+[15]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:37:12
+[]------EXE_STACK------
+[varf=Model.value.StringValue@378fd1ac, varc=50]------SYM_TABLE------
+[15, 50]------OUT------
+[test.in=java.io.BufferedReader@533ddba]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[varf="test.in";
+openRFile(varf);
+int varc;
+readFile(varf,varc);
+print(varc);
+readFile(varf,varc);
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[]------EXE_STACK------
+[varf=""]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[openRFile(varf);
+int varc;
+readFile(varf,varc);
+print(varc);
+readFile(varf,varc);
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf=""]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[]------EXE_STACK------
+[varf="test.in"]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[int varc;
+readFile(varf,varc);
+print(varc);
+readFile(varf,varc);
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf="test.in"]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[]------EXE_STACK------
+[varf="test.in"]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[readFile(varf,varc);
+print(varc);
+readFile(varf,varc);
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf="test.in"]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[]------EXE_STACK------
+[varf="test.in", varc=0]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[print(varc);
+readFile(varf,varc);
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf="test.in", varc=0]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[]------EXE_STACK------
+[varf="test.in", varc=15]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[readFile(varf,varc);
+print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf="test.in", varc=15]------SYM_TABLE------
+[]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[]------EXE_STACK------
+[varf="test.in", varc=15]------SYM_TABLE------
+[15]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[print(varc);
+closeRFile(varf)]------EXE_STACK------
+[varf="test.in", varc=15]------SYM_TABLE------
+[15]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[]------EXE_STACK------
+[varf="test.in", varc=50]------SYM_TABLE------
+[15]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[closeRFile(varf)]------EXE_STACK------
+[varf="test.in", varc=50]------SYM_TABLE------
+[15]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+
+11/11/2021 16:48:50
+[]------EXE_STACK------
+[varf="test.in", varc=50]------SYM_TABLE------
+[15, 50]------OUT------
+[test.in=java.io.BufferedReader@5910e440]------FILE_TABLE------
+

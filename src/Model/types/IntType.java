@@ -12,9 +12,7 @@ public class IntType implements IType{
 
     @Override
     public boolean equals(Object o) {
-        if (o == null || o.getClass() != this.getClass())
-            return false;
-        return true;
+        return o != null && o.getClass() == this.getClass();
     }
 
     @Override

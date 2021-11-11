@@ -31,6 +31,6 @@ public class VarDeclStmt implements IStmt{
 
     @Override
     public String toString() {
-        return String.format("%s %s;",type.toString(),name);
+        return String.format("%s %s",type.toString(),name);
     }
 }

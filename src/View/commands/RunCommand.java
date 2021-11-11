@@ -3,6 +3,9 @@ package View.commands;
 import Controller.Controller;
 import Exceptions.*;
 
+import java.io.File;
+import java.io.IOException;
+
 public class RunCommand extends Command{
 
     private final Controller ctrl;
@@ -11,11 +14,11 @@ public class RunCommand extends Command{
         this.ctrl=_ctrl;
     }
     @Override
-    public void execute() throws InterpreterError, ListError, StackError, DictError, VarNotDefinedError, InvalidTypeError, DivisionByZeroError, VarAlreadyDefined{
+    public void execute() throws InterpreterError, ListError, StackError, DictError, VarNotDefinedError, InvalidTypeError, DivisionByZeroError, VarAlreadyDefined, IOException, FileError {
         try {
             ctrl.allStep();
         }
-        catch (InterpreterError | VarAlreadyDefined |   ListError | StackError | DictError | InvalidTypeError | DivisionByZeroError | VarNotDefinedError e){
+        catch (InterpreterError | VarAlreadyDefined | ListError | StackError | DictError | InvalidTypeError | DivisionByZeroError | VarNotDefinedError | IOException | FileError e){
             System.out.println(e);
         }
     }

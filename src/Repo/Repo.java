@@ -4,11 +4,20 @@ import Model.PrgState;
 import Model.adt.IList;
 import Model.adt.List;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Repo implements IRepo {
 
     IList<PrgState> myPrgStates;
+    private final String logFileName;
 
-    public Repo() {
+    public Repo(String _logFileName) {
+        logFileName=_logFileName;
         myPrgStates = new List<PrgState>();
     }
 
@@ -30,6 +39,15 @@ public class Repo implements IRepo {
     @Override
     public void addPrg(PrgState newPrg) {
         myPrgStates.add(newPrg);
+    }
+
+    @Override
+    public void logPrgExe(PrgState prg) throws IOException{
+        PrintWriter logFile;
+        logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFileName, true)));
+        logFile.println(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
+        logFile.println(prg);
+        logFile.close();
     }
 
 

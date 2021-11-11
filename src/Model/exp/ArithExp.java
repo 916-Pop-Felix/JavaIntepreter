@@ -60,5 +60,5 @@ public class ArithExp implements Exp{
     }
 
 
-    public String toString() { return e1.toString() + op.label + e2.toString()+";"; }
+    public String toString() { return e1.toString() + op.label + e2.toString(); }
 }

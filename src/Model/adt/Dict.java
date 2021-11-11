@@ -38,6 +38,14 @@ public class Dict<T1,T2> implements IDict<T1,T2> {
     }
 
     @Override
+    public void remove(T1 v1) throws DictError {
+        if (!isDefined(v1)){
+            throw new DictError("ID not found in dict");
+        }
+        dictionary.remove(v1);
+    }
+
+    @Override
     public String toString() {
         return Arrays.toString(dictionary.entrySet().toArray());
     }

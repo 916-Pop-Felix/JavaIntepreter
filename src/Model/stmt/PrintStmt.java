@@ -20,7 +20,7 @@ public class PrintStmt implements IStmt{
 
     @Override
     public String toString() {
-        return "print(" +expression.toString()+");";
+        return "print(" +expression.toString()+")";
     }
 
     public PrgState execute(PrgState state) throws InterpreterError, DivisionByZeroError, InvalidTypeError {

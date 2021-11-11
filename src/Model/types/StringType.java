@@ -1,12 +1,14 @@
 package Model.types;
 
-import Model.value.BoolValue;
 import Model.value.IValue;
+import Model.value.StringValue;
 
-public class BoolType implements IType{
+public class StringType implements IType{
+
+
     @Override
     public IValue defaultValue() {
-        return new BoolValue(false);
+        return new StringValue("");
     }
 
     @Override
@@ -16,11 +18,11 @@ public class BoolType implements IType{
 
     @Override
     public IType deepCopy() {
-        return new BoolType();
+        return new StringType();
     }
 
     @Override
-    public String toString(){
-        return "bool";
+    public String toString() {
+        return "string";
     }
 }

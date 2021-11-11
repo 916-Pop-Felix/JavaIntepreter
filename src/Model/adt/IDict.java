@@ -8,5 +8,6 @@ public interface IDict<T1,T2>{
     void update(T1 v1, T2 v2) throws DictError;
     T2 lookup(T1 id);
     boolean isDefined(T1 id);
+    void remove(T1 v1) throws DictError;
     String toString();
 }
