@@ -4,6 +4,10 @@ import Model.types.BoolType;
 import Model.types.IType;
 
 public class BoolValue implements IValue{
+    @Override
+    public IType getLocation() {
+        return null;
+    }
 
     boolean value;
 

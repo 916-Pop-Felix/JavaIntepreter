@@ -19,7 +19,7 @@ public class OpenRFileStmt implements IStmt{
 
     @Override
     public PrgState execute(PrgState state) throws InterpreterError, DictError, VarNotDefinedError, InvalidTypeError, DivisionByZeroError, VarAlreadyDefined,FileError {
-        IValue value=exp.eval(state.getSymTable());
+        IValue value=exp.eval(state.getSymTable(), state.getHeap());
         if (!value.getType().equals(new StringType()))
             throw new InvalidTypeError(String.format("%s is not of type string",exp));
         StringValue fileName=(StringValue) value;

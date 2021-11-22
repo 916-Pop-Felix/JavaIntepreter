@@ -27,6 +27,11 @@ public class StringValue implements IValue{
         return new StringType();
     }
 
+    @Override
+    public IType getLocation() {
+        return null;
+    }
+
     public String getValue(){return this.value;}
 
     @Override

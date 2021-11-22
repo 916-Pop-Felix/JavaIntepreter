@@ -1,5 +1,6 @@
 package Model.exp;
 import Model.adt.IDict;
+import Model.adt.IHeap;
 import Model.value.IValue;
 
 public class VarExp implements Exp{
@@ -9,7 +10,7 @@ public class VarExp implements Exp{
         this.id = id;
     }
 
-    public IValue eval(IDict<String, IValue> symTable) {
+    public IValue eval(IDict<String, IValue> symTable, IHeap heap) {
         return symTable.lookup(id);
     }
 

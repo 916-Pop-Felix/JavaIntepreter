@@ -1,0 +1,262 @@
+22/11/2021 20:04:12
+[]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:04:12
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,a);
+print(v);
+print(a)]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:04:12
+[]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:04:12
+[Ref(Ref(int)) a;
+new(a,a);
+print(v);
+print(a)]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:08:41
+[]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:08:41
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+print(v);
+print(a)]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:08:41
+[]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:08:41
+[Ref(Ref(int)) a;
+new(a,v);
+print(v);
+print(a)]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:19:01
+[]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:19:01
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+print(v);
+print(a)]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:19:01
+[]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:19:01
+[Ref(Ref(int)) a;
+new(a,v);
+print(v);
+print(a)]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:19:39
+[]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:19:39
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+print(v);
+print(a)]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:19:39
+[]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:19:39
+[Ref(Ref(int)) a;
+new(a,v);
+print(v);
+print(a)]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:23:59
+[]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:23:59
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,20);
+print(v);
+print(a)]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:23:59
+[]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:23:59
+[Ref(Ref(int)) a;
+new(a,20);
+print(v);
+print(a)]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:29:29
+[]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:29:29
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+print(v);
+print(a)]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:29:29
+[]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:29:29
+[Ref(Ref(int)) a;
+new(a,v);
+print(v);
+print(a)]------EXE_STACK------
+[v=ReferenceValue{0 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+22/11/2021 20:29:29
+[]------EXE_STACK------
+[v=ReferenceValue{1 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+22/11/2021 20:29:29
+[new(a,v);
+print(v);
+print(a)]------EXE_STACK------
+[v=ReferenceValue{1 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+22/11/2021 20:29:29
+[]------EXE_STACK------
+[a=ReferenceValue{0 -> Ref(int)}, v=ReferenceValue{1 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+22/11/2021 20:29:29
+[print(v);
+print(a)]------EXE_STACK------
+[a=ReferenceValue{0 -> Ref(int)}, v=ReferenceValue{1 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+22/11/2021 20:29:29
+[]------EXE_STACK------
+[a=ReferenceValue{2 -> Ref(int)}, v=ReferenceValue{1 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=ReferenceValue{1 -> int}]------HEAP------
+
+22/11/2021 20:29:29
+[print(a)]------EXE_STACK------
+[a=ReferenceValue{2 -> Ref(int)}, v=ReferenceValue{1 -> int}]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=ReferenceValue{1 -> int}]------HEAP------
+
+22/11/2021 20:29:29
+[]------EXE_STACK------
+[a=ReferenceValue{2 -> Ref(int)}, v=ReferenceValue{1 -> int}]------SYM_TABLE------
+[ReferenceValue{1 -> int}]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=ReferenceValue{1 -> int}]------HEAP------
+

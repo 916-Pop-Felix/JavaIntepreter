@@ -1,7 +1,7 @@
 package Model.exp;
 
-import Exceptions.InterpreterError;
 import Model.adt.IDict;
+import Model.adt.IHeap;
 import Model.value.IValue;
 
 public class ValueExp implements Exp{
@@ -12,7 +12,7 @@ public class ValueExp implements Exp{
     }
 
     @Override
-    public IValue eval(IDict<String, IValue> symTable){
+    public IValue eval(IDict<String, IValue> symTable, IHeap heap){
         return value;
     }
 

@@ -1,6 +1,9 @@
 package Model.adt;
 
 import Exceptions.DictError;
+import Model.value.IValue;
+
+import java.util.Map;
 
 public interface IDict<T1,T2>{
 
@@ -9,5 +12,6 @@ public interface IDict<T1,T2>{
     T2 lookup(T1 id);
     boolean isDefined(T1 id);
     void remove(T1 v1) throws DictError;
+    Map<T1, T2> getContent();
     String toString();
 }

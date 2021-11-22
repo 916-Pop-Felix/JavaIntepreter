@@ -4,7 +4,6 @@ import Exceptions.*;
 import Model.PrgState;
 import Model.adt.IDict;
 import Model.exp.Exp;
-import Model.types.IType;
 import Model.types.IntType;
 import Model.types.StringType;
 import Model.value.IValue;
@@ -32,7 +31,7 @@ public class ReadFileStmt implements IStmt {
         IValue value=symTable.lookup(varName);
         if (!value.getType().equals(new IntType()))
             throw new InvalidTypeError(String.format("Variable %s is not of type int",value));
-        value=exp.eval(symTable);
+        value=exp.eval(symTable,state.getHeap() );
         if (!value.getType().equals(new StringType()))
             throw new InvalidTypeError(String.format("Variable %s is not of type string",value));
         StringValue fileName=(StringValue) value;

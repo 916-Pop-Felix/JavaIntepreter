@@ -33,6 +33,11 @@ public class IntValue implements IValue{
         return new IntType();
     }
 
+    @Override
+    public IType getLocation() {
+        return null;
+    }
+
     public int getValue(){
         return this.value;
     }

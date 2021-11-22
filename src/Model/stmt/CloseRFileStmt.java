@@ -9,7 +9,6 @@ import Model.value.IValue;
 import Model.value.StringValue;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 
 public class CloseRFileStmt implements IStmt{
@@ -19,7 +18,7 @@ public class CloseRFileStmt implements IStmt{
 
     @Override
     public PrgState execute(PrgState state) throws InterpreterError, DictError, VarNotDefinedError, InvalidTypeError, DivisionByZeroError, VarAlreadyDefined, FileError {
-        IValue value=exp.eval(state.getSymTable());
+        IValue value=exp.eval(state.getSymTable(), state.getHeap());
         if (!value.getType().equals(new StringType()))
             throw new InvalidTypeError(String.format("%s is not of type string",exp));
         StringValue fileName=(StringValue) value;

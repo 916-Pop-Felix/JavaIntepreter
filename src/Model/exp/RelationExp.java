@@ -1,9 +1,11 @@
 package Model.exp;
 
+import Exceptions.DictError;
 import Exceptions.DivisionByZeroError;
 import Exceptions.InterpreterError;
 import Exceptions.InvalidTypeError;
 import Model.adt.IDict;
+import Model.adt.IHeap;
 import Model.types.IntType;
 import Model.value.BoolValue;
 import Model.value.IValue;
@@ -21,11 +23,11 @@ public class RelationExp implements Exp{
     }
 
     @Override
-    public IValue eval(IDict<String, IValue> tbl) throws InterpreterError, DivisionByZeroError, InvalidTypeError {
+    public IValue eval(IDict<String, IValue> tbl, IHeap heap) throws InterpreterError, DivisionByZeroError, InvalidTypeError, DictError {
         IValue v1,v2;
-        v1=e1.eval(tbl);
+        v1=e1.eval(tbl, heap);
         if (v1.getType().equals(new IntType())) {
-            v2 = e2.eval(tbl);
+            v2 = e2.eval(tbl,heap );
             if (v2.getType().equals(new IntType())) {
                 IntValue i1 = (IntValue) v1;
                 IntValue i2 = (IntValue) v2;

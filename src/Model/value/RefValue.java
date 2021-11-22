@@ -32,6 +32,6 @@ public class RefValue implements IValue{
 
     @Override
     public String toString() {
-        return String.format("ReferenceValue{%d -> %s}", addr, location);
+        return String.format("(%d ,%s)", addr, location);
     }
 }

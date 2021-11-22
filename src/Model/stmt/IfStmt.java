@@ -1,5 +1,6 @@
 package Model.stmt;
 
+import Exceptions.DictError;
 import Exceptions.DivisionByZeroError;
 import Exceptions.InterpreterError;
 import Exceptions.InvalidTypeError;
@@ -25,8 +26,8 @@ public class IfStmt implements IStmt{
         return String.format("if (%s){\n%s\n}else{\n%s\n}",exp.toString(),thenS.toString(),elseS.toString());
     }
 
-    public PrgState execute(PrgState state) throws InterpreterError, InvalidTypeError, DivisionByZeroError {
-        IValue value=exp.eval(state.getSymTable());
+    public PrgState execute(PrgState state) throws InterpreterError, InvalidTypeError, DivisionByZeroError, DictError {
+        IValue value=exp.eval(state.getSymTable(), state.getHeap());
         if (value.getType().equals(new BoolType())) {
             BoolValue cond=(BoolValue)value;
             if (cond.getValue()){

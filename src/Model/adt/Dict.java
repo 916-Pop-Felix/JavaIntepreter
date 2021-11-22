@@ -46,6 +46,11 @@ public class Dict<T1,T2> implements IDict<T1,T2> {
     }
 
     @Override
+    public Map<T1, T2> getContent() {
+        return dictionary;
+    }
+
+    @Override
     public String toString() {
         return Arrays.toString(dictionary.entrySet().toArray());
     }

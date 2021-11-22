@@ -2,6 +2,7 @@ package Model.adt;
 
 import Exceptions.ListError;
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 public class List<T> implements IList<T> {
@@ -38,6 +39,16 @@ public class List<T> implements IList<T> {
     @Override
     public T get(int pos) {
         return this.list.get(pos);
+    }
+
+    @Override
+    public boolean contains(T e) {
+        return list.contains(e);
+    }
+
+    @Override
+    public java.util.List<T> get() {
+        return new ArrayList<>(list);
     }
 
     @Override
