@@ -34,7 +34,7 @@ public class HeapAlloc implements IStmt{
             throw new InvalidTypeError(String.format("%s is not of type %s",varName,eval.getType()));
         Integer newPos=heap.addValue(eval);
         symTable.update(varName,new RefValue(newPos,locType));
-        return state;
+        return null;
     }
 
     @Override

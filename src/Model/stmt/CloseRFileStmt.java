@@ -33,7 +33,7 @@ public class CloseRFileStmt implements IStmt{
             throw new FileError(String.format("File %s could not be closed!",fileName));
         }
         fileTable.remove(fileName.getValue());
-        return state;
+        return null;
     }
 
     @Override

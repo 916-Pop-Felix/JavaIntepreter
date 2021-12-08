@@ -36,7 +36,7 @@ public class IfStmt implements IStmt{
             else{
                 state.getExeStack().push(elseS);
             }
-            return state;
+            return null;
         }
         throw new InvalidTypeError("Bool type absent in if statement");
     }

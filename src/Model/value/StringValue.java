@@ -41,6 +41,6 @@ public class StringValue implements IValue{
 
     @Override
     public String toString() {
-        return String.format("\"%s\"",value);
+        return this.value;
     }
 }

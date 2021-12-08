@@ -17,8 +17,9 @@ public class RunCommand extends Command{
     public void execute() throws InterpreterError, ListError, StackError, DictError, VarNotDefinedError, InvalidTypeError, DivisionByZeroError, VarAlreadyDefined, IOException, FileError {
         try {
             ctrl.allStep();
+
         }
-        catch (InterpreterError | VarAlreadyDefined | ListError | StackError | DictError | InvalidTypeError | DivisionByZeroError | VarNotDefinedError | IOException | FileError e){
+        catch (InterpreterError | VarAlreadyDefined | ListError | StackError | DictError | InvalidTypeError | DivisionByZeroError | VarNotDefinedError | IOException | FileError | InterruptedException e){
             System.out.println(e);
         }
     }

@@ -34,7 +34,7 @@ public class OpenRFileStmt implements IStmt{
             throw new FileError(String.format("File %s could not be opened",fileName));
         }
         fileTable.add(fileName.getValue(),buf);
-        return state;
+        return null;
     }
 
     @Override

@@ -26,7 +26,7 @@ public class WhileStmt implements IStmt{
             state.getExeStack().push(this);
             state.getExeStack().push(stmt);
         }
-        return state;
+        return null;
     }
 
     @Override

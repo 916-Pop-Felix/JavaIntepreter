@@ -23,6 +23,6 @@ public class PrintStmt implements IStmt{
 
     public PrgState execute(PrgState state) throws InterpreterError, DivisionByZeroError, InvalidTypeError, DictError {
         state.getOutput().add(expression.eval(state.getSymTable(),state.getHeap() ).toString());
-        return state;
+        return null;
     }
 }

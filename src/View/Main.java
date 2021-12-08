@@ -29,8 +29,9 @@ public class Main {
         PrgState myPrgState = new PrgState(new MyStack<IStmt>(), new Dict<String, IValue>(), new List<String>(),
                 new Dict<String, BufferedReader>(), new Heap(), ex);
         Repo repo = new Repo(logFileName);
-        repo.addPrg(myPrgState);
-        return new Controller(repo);
+        Controller ctrl = new Controller(repo);
+        ctrl.addProgram(myPrgState);
+        return ctrl;
     }
 
     public static void main(String[] args) throws InterpreterError, ListError, StackError, DictError, VarNotDefinedError
@@ -79,10 +80,20 @@ public class Main {
                 , new CompStmt(new PrintStmt(new HeapRead(new VarExp("v"))), new CompStmt(new HeapWrite("v", new ValueExp(new IntValue(30))),
                 new PrintStmt(new ArithExp(OPERATOR.ADD, new HeapRead(new VarExp("v")), new ValueExp(new IntValue(5))))))));
 
-        IStmt ex9=new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), new CompStmt(new HeapAlloc(
+        IStmt ex9 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), new CompStmt(new HeapAlloc(
                 "v", new ValueExp(new IntValue(20))), new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType())))
-                , new CompStmt(new HeapAlloc("a", new VarExp("v")),new CompStmt(new HeapAlloc(
-                "v", new ValueExp(new IntValue(30))),new PrintStmt(new HeapRead(new HeapRead(new VarExp("a")))))))));
+                , new CompStmt(new HeapAlloc("a", new VarExp("v")), new CompStmt(new HeapAlloc(
+                "v", new ValueExp(new IntValue(30))), new PrintStmt(new HeapRead(new HeapRead(new VarExp("a")))))))));
+
+
+        IStmt ex10 = new CompStmt(new VarDeclStmt("v", new IntType()), new CompStmt(new VarDeclStmt("a",
+                new RefType(new IntType())), new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(10))),
+                new CompStmt(new HeapAlloc("a", new ValueExp(new IntValue(22))),
+                        new CompStmt(new ForkStmt(new CompStmt(new HeapWrite("a", new ValueExp(new IntValue(30)))
+                                , new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(32))),
+                                new CompStmt(new PrintStmt(new VarExp("v")), new PrintStmt(new HeapRead(new VarExp("a"))))))),
+                                new CompStmt(new PrintStmt(new VarExp("v")), new PrintStmt(new HeapRead(new VarExp("a")))))))));
+
 
         Controller ctrl1 = createController(ex1, "log1.txt");
         Controller ctrl2 = createController(ex2, "log2.txt");
@@ -92,7 +103,8 @@ public class Main {
         Controller ctrl6 = createController(ex6, "log6.txt");
         Controller ctrl7 = createController(ex7, "log7.txt");
         Controller ctrl8 = createController(ex8, "log8.txt");
-        Controller ctrl9=createController(ex9,"log9.txt");
+        Controller ctrl9 = createController(ex9, "log9.txt");
+        Controller ctrl10 = createController(ex10, "log10.txt");
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "Exit"));
@@ -104,7 +116,8 @@ public class Main {
         menu.addCommand(new RunCommand("6", ex6.toString(), ctrl6));
         menu.addCommand(new RunCommand("7", ex7.toString(), ctrl7));
         menu.addCommand(new RunCommand("8", ex8.toString(), ctrl8));
-        menu.addCommand(new RunCommand("9",ex9.toString(),ctrl9));
+        menu.addCommand(new RunCommand("9", ex9.toString(), ctrl9));
+        menu.addCommand(new RunCommand("10", ex10.toString(), ctrl10));
         menu.show();
     }
 }

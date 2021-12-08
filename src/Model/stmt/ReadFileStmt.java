@@ -47,7 +47,7 @@ public class ReadFileStmt implements IStmt {
         catch (IOException ioe){
             throw new FileError(String.format("Could not read from file %s",fileName.getValue()));
         }
-        return state;
+        return null;
     }
 
     @Override

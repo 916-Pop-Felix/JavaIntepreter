@@ -34,7 +34,7 @@ public class HeapWrite implements IStmt{
         if (!locType.equals(eval.getType()))
             throw new InvalidTypeError(String.format("%s is not of type %s",varName,eval.getType()));
         heap.update(refValue.getAddr(),eval);
-        return state;
+        return null;
     }
 
     @Override

@@ -23,7 +23,7 @@ public class VarDeclStmt implements IStmt{
         IDict<String,IValue> symTable=state.getSymTable();
         if (!symTable.isDefined(name)){
             symTable.add(name,type.defaultValue());
-            return state;
+            return null;
         }
         throw new VarAlreadyDefined(String.format("Variable %s already declared",name));
 

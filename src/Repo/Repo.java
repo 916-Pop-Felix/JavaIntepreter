@@ -1,33 +1,27 @@
 package Repo;
 import Exceptions.ListError;
 import Model.PrgState;
-import Model.adt.IList;
-import Model.adt.List;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Repo implements IRepo {
 
-    IList<PrgState> myPrgStates;
+    List<PrgState> myPrgStates;
     private final String logFileName;
 
     public Repo(String _logFileName) {
         logFileName=_logFileName;
-        myPrgStates = new List<PrgState>();
+        myPrgStates = new ArrayList<>();
     }
 
     @Override
-    public PrgState getCrtPrg() throws ListError{
-        return myPrgStates.pop();
-    }
-
-    @Override
-    public IList<PrgState> getPrograms() {
+    public List<PrgState> getPrograms() {
         return myPrgStates;
     }
 
@@ -48,6 +42,11 @@ public class Repo implements IRepo {
         logFile.println(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
         logFile.println(prg);
         logFile.close();
+    }
+
+    @Override
+    public void setPrgList(List<PrgState> prgList) {
+        myPrgStates=prgList;
     }
 
 

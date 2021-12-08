@@ -39,7 +39,7 @@ public class AssignStmt implements IStmt{
         }
         else
             throw new VarNotDefinedError("the used variable" +id + " was not declared before");
-        return state;
+        return null;
     }
 
 }
