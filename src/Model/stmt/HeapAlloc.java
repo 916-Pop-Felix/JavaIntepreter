@@ -38,6 +38,16 @@ public class HeapAlloc implements IStmt{
     }
 
     @Override
+    public IDict<String, IType> typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        IType typevar=typeEnv.lookup(varName);
+        IType typexp=exp.typeCheck(typeEnv);
+        if (typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else
+            throw new InvalidTypeError("NEW stmt: right hand side and left hand side have different types ");
+    }
+
+    @Override
     public String toString() {
         return String.format("new(%s,%s)",varName,exp);
     }

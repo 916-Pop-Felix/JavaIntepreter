@@ -50,6 +50,17 @@ public class Dict<T1,T2> implements IDict<T1,T2> {
         return dictionary;
     }
 
+    public IDict<T1, T2> copy() {
+        IDict<T1, T2> toReturn = new Dict<>();
+        for (T1 key : keySet())
+            toReturn.add(key, lookup(key));
+        return toReturn;
+    }
+
+    private Set<T1> keySet() {
+        return dictionary.keySet();
+    }
+
     @Override
     public String toString() {
         return Arrays.toString(dictionary.entrySet().toArray());

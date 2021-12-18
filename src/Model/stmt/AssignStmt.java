@@ -42,4 +42,14 @@ public class AssignStmt implements IStmt{
         return null;
     }
 
+    @Override
+    public IDict<String, IType> typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        IType typevar=typeEnv.lookup(id);
+        IType typexp= expression.typeCheck(typeEnv);
+        if (typevar.equals(typexp))
+            return typeEnv;
+        else
+            throw new InvalidTypeError("declared type of variable" + id + " the assigned expression do not match");
+    }
+
 }

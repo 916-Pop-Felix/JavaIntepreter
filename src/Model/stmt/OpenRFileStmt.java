@@ -4,6 +4,7 @@ import Exceptions.*;
 import Model.PrgState;
 import Model.adt.IDict;
 import Model.exp.Exp;
+import Model.types.IType;
 import Model.types.StringType;
 import Model.value.IValue;
 import Model.value.StringValue;
@@ -35,6 +36,13 @@ public class OpenRFileStmt implements IStmt{
         }
         fileTable.add(fileName.getValue(),buf);
         return null;
+    }
+
+    @Override
+    public IDict<String, IType> typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        if (!exp.typeCheck(typeEnv).equals(new StringType()))
+            throw new InvalidTypeError(String.format("%s is not of type string",exp));
+        return typeEnv;
     }
 
     @Override

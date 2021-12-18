@@ -7,6 +7,8 @@ import Exceptions.InvalidTypeError;
 import Model.adt.IDict;
 import Model.adt.IHeap;
 import Model.types.BoolType;
+import Model.types.IType;
+import Model.types.IntType;
 import Model.value.BoolValue;
 import Model.value.IValue;
 
@@ -41,6 +43,22 @@ public class LogicExp implements Exp{
 
         }
         throw new InvalidTypeError(String.format("Invalid operation between %s and %s",e1.toString(),e2.toString()));
+    }
+
+    @Override
+    public IType typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        IType typ1, typ2;
+        typ1=e1.typeCheck(typeEnv);
+        typ2=e2.typeCheck(typeEnv);
+        if (typ1.equals((new BoolType()))){
+            if (typ2.equals(new BoolType())){
+                return new BoolType();
+            }else
+                throw new InvalidTypeError("second operand is not boolean");
+        }
+        else{
+            throw new InvalidTypeError("first operand is not boolean");
+        }
     }
 
     @Override

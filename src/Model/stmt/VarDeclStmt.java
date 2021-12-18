@@ -2,6 +2,7 @@ package Model.stmt;
 
 
 import Exceptions.InterpreterError;
+import Exceptions.InvalidTypeError;
 import Exceptions.VarAlreadyDefined;
 import Model.PrgState;
 import Model.adt.IDict;
@@ -27,6 +28,12 @@ public class VarDeclStmt implements IStmt{
         }
         throw new VarAlreadyDefined(String.format("Variable %s already declared",name));
 
+    }
+
+    @Override
+    public IDict<String, IType> typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        typeEnv.add(name,type);
+        return typeEnv;
     }
 
     @Override

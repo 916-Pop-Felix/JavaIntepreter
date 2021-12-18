@@ -5,8 +5,10 @@ import Exceptions.DivisionByZeroError;
 import Exceptions.InterpreterError;
 import Exceptions.InvalidTypeError;
 import Model.PrgState;
+import Model.adt.IDict;
 import Model.exp.Exp;
 import Model.types.BoolType;
+import Model.types.IType;
 import Model.value.BoolValue;
 import Model.value.IValue;
 
@@ -39,5 +41,17 @@ public class IfStmt implements IStmt{
             return null;
         }
         throw new InvalidTypeError("Bool type absent in if statement");
+    }
+
+    @Override
+    public IDict<String, IType> typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        IType typexp=exp.typeCheck(typeEnv);
+        if (typexp.equals(new BoolType())){
+            thenS.typeCheck(typeEnv.copy());
+            elseS.typeCheck(typeEnv.copy());
+            return typeEnv;
+        }
+        else
+            throw new InvalidTypeError("Bool type absent in if statement");
     }
 }

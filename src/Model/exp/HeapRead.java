@@ -6,6 +6,7 @@ import Exceptions.InterpreterError;
 import Exceptions.InvalidTypeError;
 import Model.adt.IDict;
 import Model.adt.IHeap;
+import Model.types.IType;
 import Model.types.RefType;
 import Model.value.IValue;
 import Model.value.RefValue;
@@ -24,6 +25,16 @@ public class HeapRead implements Exp{
             throw new InvalidTypeError(String.format("%s is not of type Ref",eval));
         RefValue refValue=(RefValue) eval;
         return heap.get(refValue.getAddr());
+    }
+
+    @Override
+    public IType typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        IType typ= exp.typeCheck(typeEnv);
+        if (typ instanceof RefType){
+            RefType reft =(RefType) typ;
+            return reft.getInner();
+        } else
+            throw new InvalidTypeError("RH arg is not of type Ref");
     }
 
     @Override

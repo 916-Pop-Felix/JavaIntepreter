@@ -94,6 +94,8 @@ public class Main {
                                 new CompStmt(new PrintStmt(new VarExp("v")), new PrintStmt(new HeapRead(new VarExp("a"))))))),
                                 new CompStmt(new PrintStmt(new VarExp("v")), new PrintStmt(new HeapRead(new VarExp("a")))))))));
 
+        IStmt ex11 = new CompStmt(new VarDeclStmt("v", new IntType()), new AssignStmt("v", new ValueExp(new BoolValue())));
+
 
         Controller ctrl1 = createController(ex1, "log1.txt");
         Controller ctrl2 = createController(ex2, "log2.txt");
@@ -105,6 +107,7 @@ public class Main {
         Controller ctrl8 = createController(ex8, "log8.txt");
         Controller ctrl9 = createController(ex9, "log9.txt");
         Controller ctrl10 = createController(ex10, "log10.txt");
+        Controller ctrl11 = createController(ex11, "log11.txt");
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "Exit"));
@@ -118,6 +121,7 @@ public class Main {
         menu.addCommand(new RunCommand("8", ex8.toString(), ctrl8));
         menu.addCommand(new RunCommand("9", ex9.toString(), ctrl9));
         menu.addCommand(new RunCommand("10", ex10.toString(), ctrl10));
+        menu.addCommand(new RunCommand("11", ex11.toString(), ctrl11));
         menu.show();
     }
 }

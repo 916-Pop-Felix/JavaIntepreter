@@ -1,8 +1,11 @@
 package Model.stmt;
 
 import Exceptions.InterpreterError;
+import Exceptions.InvalidTypeError;
 import Model.PrgState;
+import Model.adt.IDict;
 import Model.adt.IStack;
+import Model.types.IType;
 
 public class CompStmt implements IStmt{
     IStmt first,second;
@@ -23,5 +26,10 @@ public class CompStmt implements IStmt{
         stk.push(second);
         stk.push(first);
         return null;
+    }
+
+    @Override
+    public IDict<String, IType> typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        return second.typeCheck(first.typeCheck(typeEnv));
     }
 }

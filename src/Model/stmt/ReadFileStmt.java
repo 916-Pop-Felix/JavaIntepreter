@@ -4,6 +4,7 @@ import Exceptions.*;
 import Model.PrgState;
 import Model.adt.IDict;
 import Model.exp.Exp;
+import Model.types.IType;
 import Model.types.IntType;
 import Model.types.StringType;
 import Model.value.IValue;
@@ -48,6 +49,17 @@ public class ReadFileStmt implements IStmt {
             throw new FileError(String.format("Could not read from file %s",fileName.getValue()));
         }
         return null;
+    }
+
+    @Override
+    public IDict<String, IType> typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        if (exp.typeCheck(typeEnv).equals(new StringType())){
+            if (typeEnv.lookup(varName).equals(new IntType())){
+                return typeEnv;
+            }
+            throw new InvalidTypeError("ReadFile requires an int as variable parameter");
+        }
+        throw new InvalidTypeError("ReadFile requires a string as expression parameter");
     }
 
     @Override

@@ -38,6 +38,13 @@ public class HeapWrite implements IStmt{
     }
 
     @Override
+    public IDict<String, IType> typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        if (typeEnv.lookup(varName).equals(new RefType(exp.typeCheck(typeEnv))))
+            return typeEnv;
+        throw new InvalidTypeError("NEW stmt: right hand side and left hand side have different types ");
+    }
+
+    @Override
     public String toString() {
         return String.format("rH(%s,%s)",varName,exp);
     }

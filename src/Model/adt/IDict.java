@@ -13,5 +13,6 @@ public interface IDict<T1,T2>{
     boolean isDefined(T1 id);
     void remove(T1 v1) throws DictError;
     Map<T1, T2> getContent();
+    IDict<T1,T2> copy();
     String toString();
 }

@@ -1,10 +1,9 @@
 package Controller;
 import Exceptions.*;
 import Model.PrgState;
-import Model.adt.IList;
-import Model.adt.IStack;
-import Model.adt.List;
+import Model.adt.*;
 import Model.stmt.IStmt;
+import Model.types.IType;
 import Model.value.IValue;
 import Model.value.RefValue;
 import Repo.Repo;
@@ -86,10 +85,16 @@ public class Controller {
         repo.setPrgList(prgList);
     }
 
-
+    public void runTypeChecker() throws InvalidTypeError,StackError{
+        for (PrgState state: repo.getPrograms()){
+            IDict<String, IType> typeEnv=new Dict<>();
+            state.getExeStack().top().typeCheck(typeEnv);
+        }
+    }
 
     public void allStep() throws InterpreterError, ListError, StackError, DictError,
             VarNotDefinedError, InvalidTypeError, DivisionByZeroError, VarAlreadyDefined, IOException, FileError, InterruptedException {
+        runTypeChecker();
         executor = Executors.newFixedThreadPool(2);
         //remove the completed programs
         java.util.List<PrgState> prgList=removeCompletedPrg(repo.getPrograms());

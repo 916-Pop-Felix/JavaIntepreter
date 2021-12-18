@@ -2,8 +2,10 @@ package Model.stmt;
 
 import Exceptions.*;
 import Model.PrgState;
+import Model.adt.IDict;
 import Model.exp.Exp;
 import Model.types.BoolType;
+import Model.types.IType;
 import Model.value.BoolValue;
 import Model.value.IValue;
 
@@ -27,6 +29,15 @@ public class WhileStmt implements IStmt{
             state.getExeStack().push(stmt);
         }
         return null;
+    }
+
+    @Override
+    public IDict<String, IType> typeCheck(IDict<String, IType> typeEnv) throws InvalidTypeError {
+        if (exp.typeCheck(typeEnv).equals(new BoolType())){
+            stmt.typeCheck(typeEnv.copy());
+            return typeEnv;
+        }
+        throw new InvalidTypeError(String.format("%s needs to be of type bool",exp));
     }
 
     @Override
