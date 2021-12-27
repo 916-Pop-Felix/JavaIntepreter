@@ -2,6 +2,8 @@ package Model.adt;
 
 import Exceptions.StackError;
 
+import java.util.List;
+
 
 public interface IStack<T> {
 
@@ -10,5 +12,6 @@ public interface IStack<T> {
     boolean isEmpty();
     T top() throws StackError;
     String toString();
+    List<T> get();
 }
 

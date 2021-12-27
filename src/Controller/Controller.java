@@ -28,6 +28,10 @@ public class Controller {
         repo.addPrg(newPrg);
     }
 
+    public Repo getRepo() {
+        return repo;
+    }
+
     private  Map<Integer, IValue> GarbageCollector(java.util.List<Integer> symTableAddr, Map<Integer,IValue> heap){
         return heap.entrySet().stream()
                 .filter(e->symTableAddr.contains(e.getKey()))
@@ -54,7 +58,7 @@ public class Controller {
                 .collect(Collectors.toList());
     }
 
-    void oneStepForAllPrg(java.util.List<PrgState> prgList) throws InterruptedException {
+    public void oneStepForAllPrg(java.util.List<PrgState> prgList) throws InterruptedException {
         prgList.forEach(prg -> {
             try {
                 repo.logPrgExe(prg);
@@ -103,6 +107,24 @@ public class Controller {
             //remove the completed programs
             prgList=removeCompletedPrg(repo.getPrograms());
         }
+        executor.shutdownNow();
+        //HERE the repository still contains at least one Completed Prg
+        // and its List<PrgState> is not empty. Note that oneStepForAllPrg calls the method
+        //setPrgList of repository in order to change the repository
+
+        // update the repository state
+        repo.setPrgList(prgList);
+    }
+
+    public void oneStep() throws InterpreterError, ListError, StackError, DictError,
+            VarNotDefinedError, InvalidTypeError, DivisionByZeroError, VarAlreadyDefined, IOException, FileError, InterruptedException {
+        executor = Executors.newFixedThreadPool(2);
+        //remove the completed programs
+        java.util.List<PrgState> prgList=removeCompletedPrg(repo.getPrograms());
+
+        oneStepForAllPrg(prgList);
+            //remove the completed programs
+        prgList=removeCompletedPrg(repo.getPrograms());
         executor.shutdownNow();
         //HERE the repository still contains at least one Completed Prg
         // and its List<PrgState> is not empty. Note that oneStepForAllPrg calls the method

@@ -17,7 +17,7 @@ public class PrgState {
     IDict<String, BufferedReader> fileTable;
     IHeap heap;
     public static IList<Integer> idList;
-    Integer id;
+    public final Integer id;
 
     public PrgState(IStack<IStmt> _exe, IDict<String, IValue> _sym, IList<String> _out, IDict<String, BufferedReader> _file, IHeap _heap, IStmt _org) {
         exeStack = _exe;

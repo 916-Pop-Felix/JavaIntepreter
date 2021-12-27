@@ -1,6 +1,8 @@
 package Model.adt;
 import Exceptions.StackError;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 public class MyStack<T> implements IStack<T> {
@@ -32,8 +34,15 @@ public class MyStack<T> implements IStack<T> {
         return stack.peek();
     }
 
+
+
     @Override
     public String toString() {
         return stack.toString();
+    }
+
+    @Override
+    public List<T> get() {
+        return new ArrayList<>(stack);
     }
 }

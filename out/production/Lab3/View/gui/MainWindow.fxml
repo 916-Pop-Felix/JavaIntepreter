@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.gui.MainWindow">
+   <children>
+      <AnchorPane prefHeight="701.0" prefWidth="1002.0" style="-fx-background-color: #86af49;">
+         <children>
+            <TextField fx:id="prgSize" layoutX="411.0" layoutY="635.0" prefHeight="22.0" prefWidth="40.0" style="-fx-background-color: #e4d1d1;" />
+            <TableView fx:id="heapTable" layoutX="49.0" layoutY="72.0" prefHeight="330.0" prefWidth="239.0" style="-fx-border-color: #9fa9a3;">
+              <columns>
+                <TableColumn fx:id="valueColumn" prefWidth="114.0" text="Value" />
+                <TableColumn fx:id="addressColumn" prefWidth="123.0" text="address" />
+              </columns>
+            </TableView>
+            <ListView fx:id="out" layoutX="321.0" layoutY="72.0" prefHeight="137.0" prefWidth="310.0" />
+            <ListView fx:id="fileTable" layoutX="321.0" layoutY="262.0" prefHeight="137.0" prefWidth="310.0" />
+            <ListView fx:id="prgList" layoutX="655.0" layoutY="446.0" prefHeight="160.0" prefWidth="310.0" />
+            <TableView fx:id="symTable" layoutX="655.0" layoutY="72.0" prefHeight="330.0" prefWidth="310.0">
+              <columns>
+                <TableColumn fx:id="symVarCol" prefWidth="169.0" text="variable name" />
+                <TableColumn fx:id="symValueCol" prefWidth="140.0" text="Value" />
+              </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="49.0" layoutY="50.0" prefHeight="22.0" prefWidth="239.0" style="-fx-background-color: #bdcebe; -fx-border-color: #9fa9a3;" text="HeapTable">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <ListView fx:id="exeStack" layoutX="44.0" layoutY="446.0" prefHeight="160.0" prefWidth="586.0" />
+            <Button fx:id="oneStep" layoutX="656.0" layoutY="635.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="310.0" style="-fx-background-color: #e4d1d1;" text="Run one step" />
+            <Label alignment="CENTER" layoutX="321.0" layoutY="50.0" prefHeight="22.0" prefWidth="310.0" style="-fx-background-color: #bdcebe; -fx-border-color: #9fa9a3;" text="Output">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="655.0" layoutY="50.0" prefHeight="22.0" prefWidth="310.0" style="-fx-background-color: #bdcebe; -fx-border-color: #9fa9a3;" text="SymTable">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="321.0" layoutY="240.0" prefHeight="22.0" prefWidth="310.0" style="-fx-background-color: #bdcebe; -fx-border-color: #9fa9a3;" text="FileTable">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="44.0" layoutY="424.0" prefHeight="22.0" prefWidth="586.0" style="-fx-background-color: #bdcebe; -fx-border-color: #9fa9a3;" text="Execution Stack">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="655.0" layoutY="424.0" prefHeight="22.0" prefWidth="310.0" style="-fx-background-color: #bdcebe; -fx-border-color: #9fa9a3;" text="Program List">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="247.0" layoutY="635.0" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #e4d1d1; -fx-border-color: #9fa9a3;" text="Number of programs:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
