@@ -12,9 +12,11 @@ import Model.value.IValue;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.util.Pair;
 
 import java.io.IOException;
@@ -100,6 +102,9 @@ public class MainWindow {
                 Alert alert = new Alert(Alert.AlertType.ERROR, interpreterError.getMessage(), ButtonType.OK);
                 alert.showAndWait();
             }
+        });
+        prgList.setOnMouseClicked(mouseEvent -> {
+            populateMain();
         });
     }
 

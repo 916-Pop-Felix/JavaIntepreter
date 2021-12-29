@@ -18,6 +18,6 @@ public class NopStmt implements IStmt {
 
     @Override
     public String toString(){
-        return "no operation";
+        return "";
     }
 }

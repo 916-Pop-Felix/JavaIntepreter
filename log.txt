@@ -6716,3 +6716,2348 @@ closeRFile(varf)]------EXE_STACK------
 []------FILE_TABLE------
 []------HEAP------
 
+28/12/2021 10:53:14
+#15
+[Ref(int) v;
+new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)))]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:53:14
+#15
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a))), Ref(int) v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:53:15
+#15
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a))), Ref(int) v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:53:15
+#15
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)))]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:53:17
+#15
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)))]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:53:17
+#15
+[Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a))), new(v,20)]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:53:18
+#15
+[Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a))), new(v,20)]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:53:18
+#15
+[Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)))]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 10:53:23
+#15
+[Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)))]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 10:53:23
+#15
+[new(a,v);
+new(v,30);
+print(rH(rH(a))), Ref(Ref(int)) a]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 10:53:23
+#15
+[new(a,v);
+new(v,30);
+print(rH(rH(a))), Ref(Ref(int)) a]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 10:53:23
+#15
+[new(a,v);
+new(v,30);
+print(rH(rH(a)))]------EXE_STACK------
+[a=(0 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 10:53:27
+#15
+[new(a,v);
+new(v,30);
+print(rH(rH(a)))]------EXE_STACK------
+[a=(0 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 10:53:27
+#15
+[new(v,30);
+print(rH(rH(a))), new(a,v)]------EXE_STACK------
+[a=(0 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 10:53:27
+#15
+[new(v,30);
+print(rH(rH(a))), new(a,v)]------EXE_STACK------
+[a=(0 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 10:53:27
+#15
+[new(v,30);
+print(rH(rH(a)))]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int)]------HEAP------
+
+28/12/2021 10:53:32
+#15
+[new(v,30);
+print(rH(rH(a)))]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int)]------HEAP------
+
+28/12/2021 10:53:32
+#15
+[print(rH(rH(a))), new(v,30)]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int)]------HEAP------
+
+28/12/2021 10:53:33
+#15
+[print(rH(rH(a))), new(v,30)]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int)]------HEAP------
+
+28/12/2021 10:53:33
+#15
+[print(rH(rH(a)))]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(3 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int), 3=30]------HEAP------
+
+28/12/2021 10:53:36
+#15
+[print(rH(rH(a)))]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(3 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int), 3=30]------HEAP------
+
+28/12/2021 10:53:36
+#15
+[]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(3 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int), 3=30]------HEAP------
+
+28/12/2021 10:58:50
+#53
+[int v;
+v=2;
+print(v);
+]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:50
+#53
+[v=2;
+print(v);
+, int v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:50
+#53
+[v=2;
+print(v);
+, int v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:50
+#53
+[v=2;
+print(v);
+]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:51
+#53
+[v=2;
+print(v);
+]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:51
+#53
+[print(v);
+, v=2]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:52
+#53
+[print(v);
+, v=2]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:52
+#53
+[print(v);
+]------EXE_STACK------
+[v=2]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:52
+#53
+[print(v);
+]------EXE_STACK------
+[v=2]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:52
+#53
+[, print(v)]------EXE_STACK------
+[v=2]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:53
+#53
+[, print(v)]------EXE_STACK------
+[v=2]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:53
+#53
+[]------EXE_STACK------
+[v=2]------SYM_TABLE------
+[2]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:54
+#53
+[]------EXE_STACK------
+[v=2]------SYM_TABLE------
+[2]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 10:58:54
+#53
+[]------EXE_STACK------
+[v=2]------SYM_TABLE------
+[2]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:47
+#40
+[int a;
+int b;
+a=2+3*5;
+b=a+1;
+print(b);
+]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:47
+#40
+[int b;
+a=2+3*5;
+b=a+1;
+print(b);
+, int a]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:48
+#40
+[int b;
+a=2+3*5;
+b=a+1;
+print(b);
+, int a]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:48
+#40
+[int b;
+a=2+3*5;
+b=a+1;
+print(b);
+]------EXE_STACK------
+[a=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:49
+#40
+[int b;
+a=2+3*5;
+b=a+1;
+print(b);
+]------EXE_STACK------
+[a=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:49
+#40
+[a=2+3*5;
+b=a+1;
+print(b);
+, int b]------EXE_STACK------
+[a=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:49
+#40
+[a=2+3*5;
+b=a+1;
+print(b);
+, int b]------EXE_STACK------
+[a=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:49
+#40
+[a=2+3*5;
+b=a+1;
+print(b);
+]------EXE_STACK------
+[a=0, b=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:50
+#40
+[a=2+3*5;
+b=a+1;
+print(b);
+]------EXE_STACK------
+[a=0, b=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:50
+#40
+[b=a+1;
+print(b);
+, a=2+3*5]------EXE_STACK------
+[a=0, b=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:50
+#40
+[b=a+1;
+print(b);
+, a=2+3*5]------EXE_STACK------
+[a=0, b=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:50
+#40
+[b=a+1;
+print(b);
+]------EXE_STACK------
+[a=17, b=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:51
+#40
+[b=a+1;
+print(b);
+]------EXE_STACK------
+[a=17, b=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:51
+#40
+[print(b);
+, b=a+1]------EXE_STACK------
+[a=17, b=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:51
+#40
+[print(b);
+, b=a+1]------EXE_STACK------
+[a=17, b=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:51
+#40
+[print(b);
+]------EXE_STACK------
+[a=17, b=18]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:52
+#40
+[print(b);
+]------EXE_STACK------
+[a=17, b=18]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:52
+#40
+[, print(b)]------EXE_STACK------
+[a=17, b=18]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:54
+#40
+[, print(b)]------EXE_STACK------
+[a=17, b=18]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:54
+#40
+[]------EXE_STACK------
+[a=17, b=18]------SYM_TABLE------
+[18]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:56
+#40
+[]------EXE_STACK------
+[a=17, b=18]------SYM_TABLE------
+[18]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:01:56
+#40
+[]------EXE_STACK------
+[a=17, b=18]------SYM_TABLE------
+[18]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:55
+#53
+[bool a;
+int v;
+a=true;
+if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:55
+#53
+[int v;
+a=true;
+if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+, bool a]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:55
+#53
+[int v;
+a=true;
+if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+, bool a]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:55
+#53
+[int v;
+a=true;
+if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+]------EXE_STACK------
+[a=false]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:56
+#53
+[int v;
+a=true;
+if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+]------EXE_STACK------
+[a=false]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:56
+#53
+[a=true;
+if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+, int v]------EXE_STACK------
+[a=false]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:56
+#53
+[a=true;
+if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+, int v]------EXE_STACK------
+[a=false]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:56
+#53
+[a=true;
+if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+]------EXE_STACK------
+[a=false, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:57
+#53
+[a=true;
+if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+]------EXE_STACK------
+[a=false, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:57
+#53
+[if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+, a=true]------EXE_STACK------
+[a=false, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:58
+#53
+[if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+, a=true]------EXE_STACK------
+[a=false, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:58
+#53
+[if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+]------EXE_STACK------
+[a=true, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:59
+#53
+[if (a){
+v=2
+}else{
+v=3
+};
+print(v);
+]------EXE_STACK------
+[a=true, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:03:59
+#53
+[print(v);
+, if (a){
+v=2
+}else{
+v=3
+}]------EXE_STACK------
+[a=true, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:02
+#53
+[print(v);
+, if (a){
+v=2
+}else{
+v=3
+}]------EXE_STACK------
+[a=true, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:02
+#53
+[print(v);
+, v=2]------EXE_STACK------
+[a=true, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:05
+#53
+[print(v);
+, v=2]------EXE_STACK------
+[a=true, v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:05
+#53
+[print(v);
+]------EXE_STACK------
+[a=true, v=2]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:06
+#53
+[print(v);
+]------EXE_STACK------
+[a=true, v=2]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:06
+#53
+[, print(v)]------EXE_STACK------
+[a=true, v=2]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:06
+#53
+[, print(v)]------EXE_STACK------
+[a=true, v=2]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:06
+#53
+[]------EXE_STACK------
+[a=true, v=2]------SYM_TABLE------
+[2]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:07
+#53
+[]------EXE_STACK------
+[a=true, v=2]------SYM_TABLE------
+[2]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:04:07
+#53
+[]------EXE_STACK------
+[a=true, v=2]------SYM_TABLE------
+[2]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:05:36
+#56
+[Ref(int) v;
+new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)));
+]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:05:36
+#56
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)));
+, Ref(int) v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:05:37
+#56
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)));
+, Ref(int) v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:05:37
+#56
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)));
+]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:05:38
+#56
+[new(v,20);
+Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)));
+]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:05:38
+#56
+[Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)));
+, new(v,20)]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:05:38
+#56
+[Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)));
+, new(v,20)]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:05:38
+#56
+[Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)));
+]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:05:41
+#56
+[Ref(Ref(int)) a;
+new(a,v);
+new(v,30);
+print(rH(rH(a)));
+]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:05:41
+#56
+[new(a,v);
+new(v,30);
+print(rH(rH(a)));
+, Ref(Ref(int)) a]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:05:41
+#56
+[new(a,v);
+new(v,30);
+print(rH(rH(a)));
+, Ref(Ref(int)) a]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:05:41
+#56
+[new(a,v);
+new(v,30);
+print(rH(rH(a)));
+]------EXE_STACK------
+[a=(0 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:05:42
+#56
+[new(a,v);
+new(v,30);
+print(rH(rH(a)));
+]------EXE_STACK------
+[a=(0 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:05:42
+#56
+[new(v,30);
+print(rH(rH(a)));
+, new(a,v)]------EXE_STACK------
+[a=(0 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:05:42
+#56
+[new(v,30);
+print(rH(rH(a)));
+, new(a,v)]------EXE_STACK------
+[a=(0 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:05:42
+#56
+[new(v,30);
+print(rH(rH(a)));
+]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int)]------HEAP------
+
+28/12/2021 11:05:44
+#56
+[new(v,30);
+print(rH(rH(a)));
+]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int)]------HEAP------
+
+28/12/2021 11:05:44
+#56
+[print(rH(rH(a)));
+, new(v,30)]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int)]------HEAP------
+
+28/12/2021 11:05:44
+#56
+[print(rH(rH(a)));
+, new(v,30)]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int)]------HEAP------
+
+28/12/2021 11:05:44
+#56
+[print(rH(rH(a)));
+]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(3 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int), 3=30]------HEAP------
+
+28/12/2021 11:05:46
+#56
+[print(rH(rH(a)));
+]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(3 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int), 3=30]------HEAP------
+
+28/12/2021 11:05:46
+#56
+[, print(rH(rH(a)))]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(3 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int), 3=30]------HEAP------
+
+28/12/2021 11:05:47
+#56
+[, print(rH(rH(a)))]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(3 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int), 3=30]------HEAP------
+
+28/12/2021 11:05:47
+#56
+[]------EXE_STACK------
+[a=(2 ,Ref(int)), v=(3 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=20, 2=(1 ,int), 3=30]------HEAP------
+
+28/12/2021 11:08:44
+#86
+[Ref(int) v;
+new(v,20);
+print(rH(v));
+rH(v,30);
+print(rH(v)+5);
+]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:08:44
+#86
+[new(v,20);
+print(rH(v));
+rH(v,30);
+print(rH(v)+5);
+, Ref(int) v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:08:45
+#86
+[new(v,20);
+print(rH(v));
+rH(v,30);
+print(rH(v)+5);
+, Ref(int) v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:08:45
+#86
+[new(v,20);
+print(rH(v));
+rH(v,30);
+print(rH(v)+5);
+]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:08:45
+#86
+[new(v,20);
+print(rH(v));
+rH(v,30);
+print(rH(v)+5);
+]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:08:45
+#86
+[print(rH(v));
+rH(v,30);
+print(rH(v)+5);
+, new(v,20)]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:08:45
+#86
+[print(rH(v));
+rH(v,30);
+print(rH(v)+5);
+, new(v,20)]------EXE_STACK------
+[v=(0 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:08:45
+#86
+[print(rH(v));
+rH(v,30);
+print(rH(v)+5);
+]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:08:46
+#86
+[print(rH(v));
+rH(v,30);
+print(rH(v)+5);
+]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:08:46
+#86
+[rH(v,30);
+print(rH(v)+5);
+, print(rH(v))]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:08:46
+#86
+[rH(v,30);
+print(rH(v)+5);
+, print(rH(v))]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:08:46
+#86
+[rH(v,30);
+print(rH(v)+5);
+]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:08:47
+#86
+[rH(v,30);
+print(rH(v)+5);
+]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:08:47
+#86
+[print(rH(v)+5);
+, rH(v,30)]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:08:47
+#86
+[print(rH(v)+5);
+, rH(v,30)]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=20]------HEAP------
+
+28/12/2021 11:08:47
+#86
+[print(rH(v)+5);
+]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:08:50
+#86
+[print(rH(v)+5);
+]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:08:50
+#86
+[, print(rH(v)+5)]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:08:50
+#86
+[, print(rH(v)+5)]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[20]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:08:50
+#86
+[]------EXE_STACK------
+[v=(1 ,int)]------SYM_TABLE------
+[20, 35]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:15
+#71
+[int v;
+Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:15
+#71
+[Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), int v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:15
+#71
+[Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), int v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:15
+#71
+[Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:16
+#71
+[Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:16
+#71
+[v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), Ref(int) a]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:16
+#71
+[v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), Ref(int) a]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:16
+#71
+[v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(0 ,int), v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:19
+#71
+[v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(0 ,int), v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:19
+#71
+[new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), v=10]------EXE_STACK------
+[a=(0 ,int), v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:19
+#71
+[new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), v=10]------EXE_STACK------
+[a=(0 ,int), v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:19
+#71
+[new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(0 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:20
+#71
+[new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(0 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:20
+#71
+[fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), new(a,22)]------EXE_STACK------
+[a=(0 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:21
+#71
+[fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), new(a,22)]------EXE_STACK------
+[a=(0 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:10:21
+#71
+[fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:23
+#71
+[fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:23
+#71
+[print(v);
+print(rH(a)), fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:25
+#71
+[print(v);
+print(rH(a)), fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:25
+#71
+[print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:25
+#82
+[rH(a,30);
+v=32;
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:31
+#71
+[print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:31
+#82
+[rH(a,30);
+v=32;
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:31
+#71
+[print(rH(a)), print(v)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:31
+#82
+[v=32;
+print(v);
+print(rH(a)), rH(a,30)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:34
+#71
+[print(rH(a)), print(v)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:34
+#82
+[v=32;
+print(v);
+print(rH(a)), rH(a,30)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:10:34
+#71
+[print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:34
+#82
+[v=32;
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:38
+#71
+[print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:38
+#82
+[v=32;
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:38
+#71
+[]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:38
+#82
+[print(v);
+print(rH(a)), v=32]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:38
+#82
+[print(v);
+print(rH(a)), v=32]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:38
+#82
+[print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:39
+#82
+[print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:39
+#82
+[print(rH(a)), print(v)]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:40
+#82
+[print(rH(a)), print(v)]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:40
+#82
+[print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30, 32]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:41
+#82
+[print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30, 32]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:10:41
+#82
+[]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30, 32, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:33
+#72
+[int v;
+Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:33
+#72
+[Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), int v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:33
+#72
+[Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), int v]------EXE_STACK------
+[]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:33
+#72
+[Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:34
+#72
+[Ref(int) a;
+v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:34
+#72
+[v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), Ref(int) a]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:34
+#72
+[v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), Ref(int) a]------EXE_STACK------
+[v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:34
+#72
+[v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(0 ,int), v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:35
+#72
+[v=10;
+new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(0 ,int), v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:35
+#72
+[new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), v=10]------EXE_STACK------
+[a=(0 ,int), v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:35
+#72
+[new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), v=10]------EXE_STACK------
+[a=(0 ,int), v=0]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:35
+#72
+[new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(0 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:36
+#72
+[new(a,22);
+fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(0 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:36
+#72
+[fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), new(a,22)]------EXE_STACK------
+[a=(0 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:36
+#72
+[fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a)), new(a,22)]------EXE_STACK------
+[a=(0 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[]------HEAP------
+
+28/12/2021 11:13:36
+#72
+[fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:37
+#72
+[fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+);
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:37
+#72
+[print(v);
+print(rH(a)), fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:37
+#72
+[print(v);
+print(rH(a)), fork(
+rH(a,30);
+v=32;
+print(v);
+print(rH(a))
+)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:37
+#72
+[print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:37
+#35
+[rH(a,30);
+v=32;
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:43
+#72
+[print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:43
+#35
+[rH(a,30);
+v=32;
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:43
+#72
+[print(rH(a)), print(v)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:43
+#35
+[v=32;
+print(v);
+print(rH(a)), rH(a,30)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:43
+#72
+[print(rH(a)), print(v)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:43
+#35
+[v=32;
+print(v);
+print(rH(a)), rH(a,30)]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[]------OUT------
+[]------FILE_TABLE------
+[1=22]------HEAP------
+
+28/12/2021 11:13:43
+#72
+[print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:43
+#35
+[v=32;
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:45
+#72
+[print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:45
+#35
+[v=32;
+print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:45
+#72
+[]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:45
+#35
+[print(v);
+print(rH(a)), v=32]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:47
+#35
+[print(v);
+print(rH(a)), v=32]------EXE_STACK------
+[a=(1 ,int), v=10]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:47
+#35
+[print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:49
+#35
+[print(v);
+print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:49
+#35
+[print(rH(a)), print(v)]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:50
+#35
+[print(rH(a)), print(v)]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:50
+#35
+[print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30, 32]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:51
+#35
+[print(rH(a))]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30, 32]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+
+28/12/2021 11:13:51
+#35
+[]------EXE_STACK------
+[a=(1 ,int), v=32]------SYM_TABLE------
+[10, 30, 32, 30]------OUT------
+[]------FILE_TABLE------
+[1=30]------HEAP------
+

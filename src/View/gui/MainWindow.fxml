@@ -29,7 +29,10 @@
                   <Font size="14.0" />
                </font></Label>
             <ListView fx:id="exeStack" layoutX="44.0" layoutY="446.0" prefHeight="160.0" prefWidth="586.0" />
-            <Button fx:id="oneStep" layoutX="656.0" layoutY="635.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="310.0" style="-fx-background-color: #e4d1d1;" text="Run one step" />
+            <Button fx:id="oneStep" layoutX="656.0" layoutY="635.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="310.0" style="-fx-background-color: #e4d1d1; -fx-font-family: Arial;" text="Run one step">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
             <Label alignment="CENTER" layoutX="321.0" layoutY="50.0" prefHeight="22.0" prefWidth="310.0" style="-fx-background-color: #bdcebe; -fx-border-color: #9fa9a3;" text="Output">
                <font>
                   <Font size="14.0" />
@@ -55,7 +58,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="247.0" layoutY="635.0" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #e4d1d1; -fx-border-color: #9fa9a3;" text="Number of programs:">
+            <Label alignment="CENTER" layoutX="247.0" layoutY="635.0" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #e4d1d1; -fx-border-color: #9fa9a3; -fx-font-family: Arial;" text="Number of programs:">
                <font>
                   <Font size="14.0" />
                </font>

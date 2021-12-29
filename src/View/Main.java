@@ -38,22 +38,21 @@ public class Main extends Application {
     public static java.util.List<IStmt> examples=new ArrayList<>();
 
     static IStmt ex1 = new CompStmt(new VarDeclStmt("v", new IntType()),
-            new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(2))),
-                    new PrintStmt(new VarExp("v"))));
+            new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(2))), new CompStmt(new PrintStmt(new VarExp("v")), new NopStmt())));
 
     // ex 2: a=2+3*5;b=a+1;Print(b)
     static IStmt ex2 = new CompStmt(new VarDeclStmt("a", new IntType()), new CompStmt(new VarDeclStmt("b", new IntType()),
             new CompStmt(new AssignStmt("a", new ArithExp(OPERATOR.ADD, new ValueExp(new IntValue(2)), new ArithExp(OPERATOR.MUL,
                     new ValueExp(new IntValue(3)), new ValueExp(new IntValue(5))))), new CompStmt(
                     new AssignStmt("b", new ArithExp(OPERATOR.ADD, new VarExp("a"), new ValueExp(new IntValue(1)))),
-                    new PrintStmt(new VarExp("b"))))));
+                    new CompStmt (new PrintStmt(new VarExp("b")), new NopStmt())))));
 
     //ex 3: bool a; int v; a=true;(If a Then v=2 Else v=3);Print(v)
     static IStmt ex3 = new CompStmt(new VarDeclStmt("a", new BoolType()), new CompStmt(new VarDeclStmt("v",
             new IntType()), new CompStmt(new AssignStmt("a", new ValueExp(new BoolValue(true))),
             new CompStmt(new IfStmt(new VarExp("a"), new AssignStmt("v", new ValueExp(new IntValue(2))),
-                    new AssignStmt("v", new ValueExp(new IntValue(3)))), new PrintStmt(new
-                    VarExp("v"))))));
+                    new AssignStmt("v", new ValueExp(new IntValue(3)))),new CompStmt( new PrintStmt(new
+                    VarExp("v")),new NopStmt())))));
 
     static IStmt ex4 = new CompStmt(new VarDeclStmt("varf", new StringType()), new CompStmt(new AssignStmt("varf",
             new ValueExp(new StringValue("test.in"))), new CompStmt(new OpenRFileStmt(new VarExp("varf")),
@@ -64,26 +63,26 @@ public class Main extends Application {
     static IStmt ex5 = new CompStmt(new VarDeclStmt("v", new IntType()), new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(4)))
             , new CompStmt(new WhileStmt(new RelationExp(OPERATOR.GREATER, new VarExp("v"), new ValueExp(new IntValue(0)))
             , new CompStmt(new PrintStmt(new VarExp("v")), new AssignStmt("v", new ArithExp(OPERATOR.SUB, new VarExp("v"),
-            new ValueExp(new IntValue(1)))))), new PrintStmt(new VarExp("v")))));
+            new ValueExp(new IntValue(1)))))),new CompStmt( new PrintStmt(new VarExp("v")),new NopStmt()))));
 
     static IStmt ex6 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), new CompStmt(new HeapAlloc(
             "v", new ValueExp(new IntValue(20))), new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType())))
             , new CompStmt(new HeapAlloc("a", new VarExp("v")), new CompStmt(new PrintStmt(new VarExp("v")),
-            new PrintStmt(new VarExp("a")))))));
+            new CompStmt( new PrintStmt(new VarExp("a")),new NopStmt()))))));
 
     static IStmt ex7 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), new CompStmt(new HeapAlloc(
             "v", new ValueExp(new IntValue(20))), new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType())))
             , new CompStmt(new HeapAlloc("a", new VarExp("v")), new CompStmt(new PrintStmt(new HeapRead(new VarExp("v"))),
-            new PrintStmt(new ArithExp(OPERATOR.ADD, new HeapRead(new HeapRead(new VarExp("a"))), new ValueExp(new IntValue(5)))))))));
+           new CompStmt( new PrintStmt(new ArithExp(OPERATOR.ADD, new HeapRead(new HeapRead(new VarExp("a"))), new ValueExp(new IntValue(5)))),new NopStmt()))))));
 
     static IStmt ex8 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), new CompStmt(new HeapAlloc("v", new ValueExp(new IntValue(20)))
             , new CompStmt(new PrintStmt(new HeapRead(new VarExp("v"))), new CompStmt(new HeapWrite("v", new ValueExp(new IntValue(30))),
-            new PrintStmt(new ArithExp(OPERATOR.ADD, new HeapRead(new VarExp("v")), new ValueExp(new IntValue(5))))))));
+            new CompStmt( new PrintStmt(new ArithExp(OPERATOR.ADD, new HeapRead(new VarExp("v")), new ValueExp(new IntValue(5)))),new NopStmt())))));
 
     static IStmt ex9 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), new CompStmt(new HeapAlloc(
             "v", new ValueExp(new IntValue(20))), new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType())))
             , new CompStmt(new HeapAlloc("a", new VarExp("v")), new CompStmt(new HeapAlloc(
-            "v", new ValueExp(new IntValue(30))), new PrintStmt(new HeapRead(new HeapRead(new VarExp("a")))))))));
+            "v", new ValueExp(new IntValue(30))),new CompStmt( new PrintStmt(new HeapRead(new HeapRead(new VarExp("a")))),new NopStmt()))))));
 
 
     static IStmt ex10 = new CompStmt(new VarDeclStmt("v", new IntType()), new CompStmt(new VarDeclStmt("a",
